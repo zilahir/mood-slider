@@ -1,0 +1,18 @@
+//Prefix to avoid conflicts with other Frameworks
+$prefix-class: "flex-" !default;
+
+//Grid variables
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+//Breakpoints
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+//Calculations
+$container-sm: 720px + $grid-gutter-width !default;
+$container-md: 940px + $grid-gutter-width !default;
+$container-lg: 1140px + $grid-gutter-width !default;
+$grid-gutter-compensation: ($grid-gutter-width / 2) * -1 !default;

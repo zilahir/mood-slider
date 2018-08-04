@@ -1,0 +1,45 @@
+@import './../mixins/icons';
+@import './../mixins/p';
+
+#outer-container{    
+    div{        
+        .bm-overlay{
+            &+.bm-menu-wrap{
+                background-color: #444;
+                &+div{
+                    .bm-burger-button{
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        right: 30px;
+                        top: 16px;
+                        span{
+                            span{
+                                background: #444;
+                            }
+                        }
+                    }
+                }
+                .bm-menu{
+                    .bm-item-list{
+                        margin-left: 20px;
+                        a{
+                            &:first-of-type{
+                                display: flex !important;
+                                justify-content: flex-end;
+                                span{
+                                    @include close;
+                                }
+                            }
+                            color: #fff;
+                            padding: 10px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 22px;
+                        }
+                    }
+                }                
+            }
+        }
+    }
+}

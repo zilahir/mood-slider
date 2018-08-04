@@ -1,0 +1,21 @@
+@import './../mixins/p';
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
+    align-items: center;
+    margin: 80px;
+    p{
+        @include paragraph(32px, #444);
+        font-size: 52px;
+        padding: 40px 0;
+    }
+    img{
+        max-width: 100%;
+        width: 300px;
+        border-radius: 100%
+    }
+}

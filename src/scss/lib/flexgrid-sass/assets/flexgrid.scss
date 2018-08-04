@@ -1,0 +1,56 @@
+@import "includes/mixins";
+@import "includes/variables";
+
+//Create container's
+.#{$prefix-class}container{
+  @include container-fixed;
+
+  @include media($screen-sm-min) {
+    width: $container-sm;
+  }
+  @include media($screen-md-min) {
+    width: $container-md;
+  }
+  @include media($screen-lg-min) {
+    width: $container-lg;
+  }
+}
+.#{$prefix-class}container-fluid{
+  @include container-fixed;
+}
+
+//Create row/col
+.#{$prefix-class}row {
+  @include make-row;
+}
+
+.#{$prefix-class}row.#{$prefix-class}reverse {
+  flex-direction: row-reverse;
+}
+
+.#{$prefix-class}col.#{$prefix-class}reverse {
+  flex-direction: column-reverse;
+}
+
+//Create grid columns
+@include make-grid-columns(xs);
+@include make-grid(xs);
+@include make-helpers(xs);
+
+@include media($screen-sm-min) {
+  @include make-grid-columns(sm);
+  @include make-grid(sm);
+  @include make-helpers(sm);
+}
+
+@include media($screen-md-min) {
+  @include make-grid-columns(md);
+  @include make-grid(md);
+  @include make-helpers(md);
+}
+
+@include media($screen-lg-min) {
+  @include make-grid-columns(lg);
+  @include make-grid(lg);
+  @include make-helpers(lg);
+}

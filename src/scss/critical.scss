@@ -1,0 +1,16 @@
+/* 
+finternational critical scss
+it can contain only includes
+*/
+@import "./_partials/reset";
+@import "./_partials/layout";
+@import "variables";
+@import "./fonts/gothambook";
+@import "lib/flexgrid-sass/assets/flexgrid";
+@import "lib/fontawesome-scss/fontAwesome";
+@import "./_partials/header";
+@import "./_partials/topnav";
+@import "./_partials/hamburgermenu";
+@import "./_partials/card";
+@import "./_partials/slider";
+@import "./_partials/mood";

@@ -1,0 +1,9 @@
+.u-slider {    
+    background-color: transparent !important;
+    margin-top: 40px;
+    .handle{
+        &:after{
+            border-color: #444 !important;
+        }
+    }
+}
