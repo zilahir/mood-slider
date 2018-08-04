@@ -11,7 +11,7 @@ class MoodSlider extends Component {
       return (                    
             <InputSlider
             className="slider slider-xy"
-            axis="x"
+            axis="xy"
             x={this.props.thisPos}
             xmax={100}            
             ymax={100}
