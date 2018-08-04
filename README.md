@@ -1,5 +1,1 @@
-workboost – finternational website
-
-meletiapp oy – 2018
-
-product owner: richardzilahi
+mood slider built in react
