@@ -6,8 +6,8 @@ class MainContent extends Component {
     render() {
         return (
             <div>                
-                <Card name="Ricsko" profilePic={profile} id="1"/>
-                <Card name="Emmi" profilePic={profile} id="2"/>
+                <Card name="John Doe" profilePic={profile} id="1"/>
+                <Card name="Jane Doe" profilePic={profile} id="2"/>
             </div>
         );
     }

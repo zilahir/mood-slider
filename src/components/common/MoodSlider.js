@@ -4,16 +4,14 @@ import { connect } from 'react-redux';
 
 class MoodSlider extends Component {
     handleChange = pos => {        
-        this.props.dispatch({ type: 'UPDATE_MOOD', x: pos.x, id: this.props.id });        
-        //console.log(this.props.x); //undefined :( )
-        //console.log(pos.x); //data OK here         
+        this.props.dispatch({ type: 'UPDATE_MOOD', x: pos.x, id: this.props.id });
     };
 
   render() {      
       return (                    
             <InputSlider
             className="slider slider-xy"
-            axis="xy"
+            axis="x"
             x={this.props.thisPos}
             xmax={100}            
             ymax={100}
