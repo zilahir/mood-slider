@@ -5,8 +5,11 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 const initialState = {
-  x: 50,   
-  mood: '😑',  
+  x: {},
+  mood: {
+    1: '😑',
+    2: '😑'
+  }  
 };
 
 function reducer(state = initialState, action) {  
@@ -15,9 +18,11 @@ function reducer(state = initialState, action) {
       return {
         ...state,
         mood: state.mood,
-        x: action.x,     
-        id: action.id 
-      }
+        x: {
+          ...state.x,
+          [action.id]: action.x
+        }
+      };
     default:
       return state;
   }  

@@ -12,7 +12,7 @@ class MoodSlider extends Component {
             <InputSlider
             className="slider slider-xy"
             axis="xy"
-            x={this.props.thisPos}
+            x={this.props.x}
             xmax={100}            
             ymax={100}
             onChange={this.handleChange}
@@ -22,9 +22,9 @@ class MoodSlider extends Component {
   }
 }
 
-function mapStateToProps(state) {        
+function mapStateToProps(state, ownProps) {    
     return {
-        x: state.x,        
+        x: state.x[ownProps.id] || 50              
     }    
 }
 

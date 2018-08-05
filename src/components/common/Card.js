@@ -4,7 +4,7 @@ import './../../../node_modules/react-input-slider/dist/input-slider.css'
 import Emoji from 'react-emoji-render';
 import { connect } from 'react-redux';
 
-const mapStateToProps = function(state){    
+const mapStateToProps = function(state){      
   return {    
     mood: state.mood,
     x: state.x,            
@@ -20,7 +20,7 @@ class Card extends Component {
             </p>
             <img src={this.props.profilePic} />
             <MoodSlider id={this.props.id} thisPos={this.props.x}/>
-            <Emoji onlyEmojiClassName="mood-ej" text={this.props.mood} />                  
+            <Emoji onlyEmojiClassName="mood-ej" text={this.props.mood[this.props.id]} />                  
         </div>
       );
   }
